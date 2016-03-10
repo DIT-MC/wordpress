@@ -14,7 +14,7 @@ $ docker run -p 8088:80 -d ditmc/wordpress
 
 After starting the wordpress container check to see if it started and the port mapping is correct.  This will also report the port mapping between the docker container and the host machine.
 
-```
+```bash
 $ docker ps
 
 0.0.0.0:8088 -> 80/tcp
@@ -22,6 +22,18 @@ $ docker ps
 
 You can the visit the following URL in a browser on your host machine to get started. Get the IP of the docker host (docker-machine ip tutorial) and visit it in your browser:
 
-```
+```bash
 http://192.168.99.100:80
+```
+
+Don't forget to stop the container when you'll not need it anymore
+
+```bash
+$ docker stop CONTAINER_ID
+```
+
+or even completely remove it:
+
+```bash
+$ docker rm CONTAINER_ID
 ```
