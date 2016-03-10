@@ -1,4 +1,4 @@
-# docker-wordpress-nginx
+# Wordpress all-in-one dockerized demo
 
 A Dockerfile that installs the latest wordpress, nginx, php-apc, php-fpm, mysql.
 
@@ -6,10 +6,10 @@ NB: A big thanks to [jbfink](https://github.com/jbfink/docker-wordpress) and [eu
 
 ## Usage
 
-To spawn a new instance of wordpress on port 80. The -p 80:80 maps the internal docker port 80 to the outside port 80 of the host machine.
+To spawn a new instance of wordpress on port 80. The -p 8088:80 maps the internal docker port 80 to the outside port 8088 of the host machine.
 
 ```bash
-$ docker run -p 80:80 -d ditmc/wordpress
+$ docker run -p 8088:80 -d ditmc/wordpress
 ```
 
 After starting the wordpress container check to see if it started and the port mapping is correct.  This will also report the port mapping between the docker container and the host machine.
