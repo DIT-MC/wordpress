@@ -17,10 +17,10 @@ After starting the wordpress container check to see if it started and the port m
 ```
 $ docker ps
 
-0.0.0.0:80 -> 80/tcp
+0.0.0.0:8088 -> 80/tcp
 ```
 
-You can the visit the following URL in a browser on your host machine to get started. Get the IP of the docker host (docker-machine ip tutorial) and visit it in your brawser:
+You can the visit the following URL in a browser on your host machine to get started. Get the IP of the docker host (docker-machine ip tutorial) and visit it in your browser:
 
 ```
 http://192.168.99.100:80
